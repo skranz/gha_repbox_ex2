@@ -11,7 +11,7 @@ extract_all_zip = function(dir) {
 extract_all_encrypted_7z = function(dir) {
   # Extract possibly compressed article PDF
   key = Sys.getenv("REPBOX_ENCRYPT_KEY")
-  print("Key = ", key)
+  #print(paste0("Key = ", key))
   zips = list.files(dir, glob2rx("*.7z"), full.names = TRUE)
   if (length(zips)>0) {
     for (zip in zips) {
