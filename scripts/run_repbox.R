@@ -68,6 +68,8 @@ run = function() {
   # 
   sup_zip = list.files("/root/sup", glob2rx("*.zip"), ignore.case=TRUE, full.names = TRUE,recursive = TRUE)
   if (length(sup_zip) != 1) {
+    cat("\nFiles in /root/sup...\n")
+    print(list.files("/root/sup", glob2rx("*"), ignore.case=TRUE, full.names = TRUE,recursive = TRUE))
     stop("After download and extraction of 7z, there must be exactly one ZIP file in the /root/sup directory.")
   }
 
