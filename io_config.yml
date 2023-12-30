@@ -9,7 +9,7 @@ sup:
   # file in the sup directory of this Github Repo
   download: false
   
-  encryption: false
+  encryption: true
   encryption_mode: 7z
   
   download_script: download_sup.R
@@ -23,7 +23,7 @@ art:
   # file in the sup directory of this Github Repo
   download: false
   
-  encryption: false
+  encryption: true
   encryption_mode: 7z
   
   download_script: download_art.R
