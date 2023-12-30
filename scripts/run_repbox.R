@@ -17,6 +17,8 @@ run = function() {
     if (password=="") {
       stop("The io_config.yml specified that the output is encrypted. This requires that you specify the password as a Github Repository Secret with name REPBOX_ENCRYPT_KEY.")
     } 
+  } else {
+    password=NULL
   }
   
   cat("\nInstall R packages specified in install.R\n")
